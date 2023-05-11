@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Absolute path -->
+    <h3>video1</h3>
+    <video src="C:\VS code\HTML_Tutorial\flower.webm" autoplay></video>
+    <br><br>
+<!-- ================================================================================================== -->
+     <h3>video2</h3>
+    <!-- relative path -->
+    <video poster="../flower pic.jpg" controls width="500">
+        <!-- poster ues to display poster or image before video play -->
+        
+        <source src="flower.webm" type="video/webm">
+    </video>
+    <br><br>
+<!-- ================================================================================================== -->
+    <h3>video3</h3>
+    <video controls loop autoplay width="700">
+        <source src="flower.webm" type="video/webm">
+    </video>
+    <br><br>
+<!-- ===================================================================================================== -->
+   <h3>video4</h3>
+   <!-- anchor tag  -->
+   <video controls autoplay width="300">
+    <source src="flower.webm" type="video/webm">
+   <a href="flower.webm">see video</a>
+</video>
+<br>
+<!-- ===================================================================================== -->
+<h3>video5</h3>
+<!-- <video src="flower.webm" width="300" autoplay> -->
+    <a href="flower.webm">see video</a>
+</video>
+</body>
+</html>

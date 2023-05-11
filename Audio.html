@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>roar1</h3>
+    <audio src="t-rex-roar.mp3" controls></audio>
+    <audio src="C:\VS code\HTML_Tutorial\t-rex-roar.mp3" controls></audio>
+    <br>
+    <!-- controls is compalsary attributes use in audio -->
+<!-- =================================================================================================================== -->
+    <h3>roar2</h3>
+    <audio controls>
+        <source src="t-rex-roar.mp3" type="audio/mp3">
+    </audio><br>
+    <!-- most probably used (<audio controls> <source....  ==> becouse if user doesnot support browser
+        linked then next audio automatically work without showing any error like image) -->
+<!--==========================================================================================================================  -->
+    <h4>roar3</h4>
+        <audio controls >
+            <source src="t-rex-roar.mp3" type="audio/mp3"><a href="t-rex-roar.mp3">audio</a>
+        </audio>
+        <br><br>
+<!-- =========================================================================================================================== -->
+     <h3>roar4</h3>
+        <figure>
+            <figcaption>Listen to the T-Rex:</figcaption>
+            <audio
+                controls
+                src="/media/cc0-audio/t-rex-roar.mp3">
+                    <a href="/media/cc0-audio/t-rex-roar.mp3">
+                        Download audio
+                    </a>
+            </audio>
+        </figure>
+        <!-- above address of audio link not work becouse is path set for another browser this path not for my system or browser -->
+        <br><br>
+<!-- =================================================================================================================================================== -->
+     <h3>roar5</h3>
+        <figure>
+            <figcaption>Listen to the T-Rex:</figcaption>
+            <audio
+                controls
+                src="t-rex-roar.mp3">
+                    <a href="t-rex-roar.mp3">
+                        Download audio
+                    </a>
+            </audio>
+        </figure>
+        <!-- above path i convert into my path way thus audio now working in my system -->
+        <br>
+<!-- ========================================================================================================================================================== -->
+     <h3>roar6</h3>
+        <audio controls >
+            <source src="t-rex-roar.mp3" type="audio/mp3" />
+            <source src="t-rex-roar.mp3" type="audio/mp3" />
+            <p>
+              Download <a href="t-rex-roar.mp3">MP3</a> or
+              <a href="t-rex-roar.mp3">OGG</a> audio.
+            </p>
+          </audio>
+          <br>
+<!-- ============================================================================================================================================================= -->
+    <h3>roar7</h3>
+          <!-- <p>here is audio <audio src="t-rex-roar.mp3" controls></audio>  -->
+            <a href="t-rex-roar.mp3">for Download</a>
+        <!-- </p> -->
+        <br>
+<!-- ============================================================================================================================================ -->
+    <h3>roar8</h3>
+        <audio controls>
+            <source scr="t-rex-roar.mp3" type="audio/mp3"/> <a href="t-rex-roar.mp3">for Download</a>
+        </audio>
+        <br>
+<!-- ========================================================================================================================================= -->
+   <h3>roar9</h3>
+        <audio controls muted >
+            <source scr="t-rex-roar.mp3" type="audio/mp3">
+        </audio>
+    <h3>roar9</h3>
+        <audio controls muted autoplay>
+            <source scr="t-rex-roar.mp3" type="audio/mp3">
+        </audio>
+       <br>
+ <!-- ===================================================================================================================================== -->
+    <h3>roar10</h3>
+   <audio controls loop>
+    <source src="t-rex-roar.mp3" type="audio/mp3"/>
+   </audio>
+    <!-- audio continue paly -->
+    <br>
+    <!-- ======================================================================================== -->
+    <h3>roar11</h3>
+    <audio controls preload="auto">
+        <source src="t-rex-roar.mp3" type="audio/mp3">
+        <!-- prelod is atrribiutes to preload large size audio automatically
+        when we open the file, do not wait audio for load to play -->
+        <!--  file open karte hi audio prelod ho jaye taki large size file ke liye wait
+        nahi karan pade. -->
+    </audio><br>
+    <!--===========================================================================================================  -->
+
+    <h3>roar12</h3>
+    <audio controls preload="none">
+        <source src="t-rex-roar.mp3" type="audio/mp3">
+        <!-- same as auto but when we click on play then it is load audio -->
+    </audio><br>
+    <!-- =================================================================================================================== -->
+    <h3>roar13</h3>
+    <audio controls preload="metadata">
+        <!-- metadata means data about data(crome already preload audio data link) -->
+        <source src="t-rex-roar.mp3" type="audio/mp3">
+    </audio><br>
+
+    <iframe width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/JX4yEBuG1mc" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen></iframe>
+</body>
+</html>

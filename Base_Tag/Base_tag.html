@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<base>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <base href="../../"></base>
+    <!-- A document's used base URL can be accessed by scripts with Node.baseURI. If the document has no <base> elements, then baseURI defaults to location.href. -->
+    <!-- किसी दस्तावेज़ के उपयोग किए गए आधार URL को Node.baseURI वाली स्क्रिप्ट द्वारा एक्सेस किया जा सकता है। यदि दस्तावेज़ में कोई <आधार> तत्व नहीं है, तो baseURI स्थान.href के लिए डिफ़ॉल्ट है। -->
+     <!-- The <base> HTML element specifies the base URL to use for all relative URLs in a document. There can be only one <base> element in a document. -->
+     <!-- <आधार> HTML तत्व एक दस्तावेज़ में सभी सापेक्ष URL के लिए उपयोग करने के लिए आधार URL निर्दिष्ट करता है। एक दस्तावेज़ में केवल एक <आधार> तत्व हो सकता है। -->
+</head>
+<body>
+    <h3>Base Tag</h3>
+    <!-- <p>base tag use hota hai, agar kisi file ki path badi hai or hame continui use ho
+        raha hai, like image, folder, video, audio etc.agar ye sab ke path same ho sirf last vale discription
+        alag ho to ""same wale path ko hum base tag me save kar denge""
+        or image, audio, video me identified discription likh denge.
+
+        ""NOTE==>"" ek file me sirf ek hi Base hota h jo head ka part h ==> basr tag ko head <menu>likhate hai.</menu>
+    </p> -->
+    <img src="../../flower pic.jpg" width="100" alt="flower image">
+    <!-- without base tage -->
+    <img src="flower pic.jpg" alt="">
+    <!-- but here we wrigth ""flower pic.jpg"" itself wiyhout any mistake -->
+    <audio controls>
+        <source src=".././t-rex-roar.mp3" type="audio/mp3"/>
+        <!-- NOTE ==> here audio not play becoze base path different for audio path -->
+    </audio>
+</body>
+</html>
